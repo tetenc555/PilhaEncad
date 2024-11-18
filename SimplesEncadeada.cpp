@@ -11,7 +11,13 @@ SimplesEncadeada::SimplesEncadeada()
 
 SimplesEncadeada::~SimplesEncadeada()
 {
-
+    No *p = primeiro;
+    while (p!= nullptr)
+    {
+        No *t = p->getProx();
+        delete p;
+        p = t;
+    }
 }
 
 void SimplesEncadeada::insereInicio(int val)
