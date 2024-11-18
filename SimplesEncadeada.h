@@ -1,5 +1,6 @@
 #ifndef SIMPLESENCADEADA_H__
 #define SIMPLESENCADEADA_H__
+#include "No.h"
 #include <iostream>
 using namespace std;
 
