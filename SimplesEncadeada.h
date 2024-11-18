@@ -7,8 +7,10 @@ class SimplesEncadeada{
     public:
         SimplesEncadeada();
         ~SimplesEncadeada();
+        void insereInicio(int val);
+        bool busca(int val);
     private:
-
+        No* primeiro;
 };
 
 #endif
