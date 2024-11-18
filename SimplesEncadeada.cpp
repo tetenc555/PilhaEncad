@@ -6,7 +6,7 @@ using namespace std;
 
 SimplesEncadeada::SimplesEncadeada()
 {
-    primeiro= NULL;
+    primeiro= nullptr;
 }
 
 SimplesEncadeada::~SimplesEncadeada()
@@ -25,7 +25,7 @@ void SimplesEncadeada::insereInicio(int val)
 bool SimplesEncadeada::busca (int val)
 {
     No* busca = primeiro;
-    while (busca!=NULL)
+    while (busca!=nullptr)
     {
         if (busca->getInfo()==val)
             return true;
