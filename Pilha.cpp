@@ -42,12 +42,18 @@ using namespace std;
 
 Pilha::Pilha()
 {
-
+    topo = nullptr;
 }
 
 Pilha::~Pilha()
 {
-
+    No* p = topo;
+    while(topo != nullptr)
+    {
+        topo = p ->getProx();
+        delete p;
+        p=topo;
+    }
 }
 
 int Pilha::getTopo()
@@ -67,5 +73,5 @@ void Pilha::desempilha()
 
 bool vazia()
 {
-    
+
 }
