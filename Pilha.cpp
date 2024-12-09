@@ -52,26 +52,36 @@ Pilha::~Pilha()
     {
         topo = p ->getProx();
         delete p;
-        p=topo;
+        p= topo;
     }
 }
 
 int Pilha::getTopo()
 {
-
+    if (this->vazia())
+        return NULL;
+    return this->topo->getInfo();
 }
 
 void Pilha::empilha(int val)
 {
-
+    No *p = new No();
+    p->setInfo(val);
+    p->setProx(this->topo);
+    this->topo = p;
 }
 
 void Pilha::desempilha()
 {
+    if (this->vazia())
+        return;
+    No* p = this->topo;
+    this->topo = p->getProx();
+    delete p;
 
 }
 
-bool vazia()
+bool Pilha::vazia()
 {
-
+    return (this->topo == nullptr);
 }
