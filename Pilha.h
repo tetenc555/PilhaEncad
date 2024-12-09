@@ -8,10 +8,13 @@ class Pilha{
     public:
         Pilha();
         ~Pilha();
-        void insereInicio(int val);
-        bool busca(int val);
+        int getTopo();
+        void empilha (int val);
+        void desempilha();
+        bool vazia ();
+
     private:
-        No* primeiro;
+        No* topo;
 };
 
 #endif
