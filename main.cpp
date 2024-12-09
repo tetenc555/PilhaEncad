@@ -1,5 +1,5 @@
 #include <iostream>
-#include "SimplesEncadeada.h"
+#include "Pilha.h"
 using namespace std;
 
 int main()

@@ -1,13 +1,13 @@
-#ifndef SIMPLESENCADEADA_H__
-#define SIMPLESENCADEADA_H__
+#ifndef PILHA_H__
+#define PILHA_H__
 #include "No.h"
 #include <iostream>
 using namespace std;
 
-class SimplesEncadeada{
+class Pilha{
     public:
-        SimplesEncadeada();
-        ~SimplesEncadeada();
+        Pilha();
+        ~Pilha();
         void insereInicio(int val);
         bool busca(int val);
     private:
